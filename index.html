@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Hero Tube</title>
+    <script src="https://kit.fontawesome.com/2924f3ac0b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav >
+         <section class="flex justify-between w-[90%]  mx-auto my-7">
+            <div class="flex items-center gap-1">
+                <i class="fa-solid fa-circle-play text-red-500 text-lg "></i>
+                <h3 class="text-2xl font-semibold"><span class="text-[#FF1F3D]" >PH</span> Tube</h3>
+              </div>
+              <div>
+                <button class="bg-gray-300 px-2 py-1 rounded text-[#252525] font-medium">Sort by View</button>
+              </div>
+              <div>
+                <button onclick="goToBlog()" class="bg-[#FF1F3D] text-base font-normal text-white px-2 py-1 rounded">Blog</button>
+              </div>
+         </section>
+         <div class="border-t-2 bg-gray-200 w-[90%] mx-auto">
+
+         </div>
+        </nav>
+    </header>
+    <!-- Main section -->
+    <main class="">
+        <section id="categoryList" class="text-center my-7 ">
+            <!-- <button id="btnAll" class="bg-gray-200 text-[252525B3] px-3 py-[2px]  rounded text-sm">All</button>
+            <button id="btnMusic" class="bg-gray-200 text-[252525B3] px-3 py-[2px] rounded text-sm ">Music</button>
+            <button id="btnComedy" class="bg-gray-200 text-[252525B3] px-3 py-[2px] rounded text-sm">Comedy</button>
+            <button id="btnDrawing" class="bg-gray-200 text-[252525B3] px-3 py-[2px] rounded text-sm">Drawing</button> -->
+        </section>
+        <!-- Card Section -->
+        <div id="cardSection" class="w-[90%] mx-auto grid grid-cols-4 gap-3 space-y-3">
+
+        </div>
+    </main>
+    <script src="./test.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
