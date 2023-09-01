@@ -26,10 +26,10 @@
     // console.log(data);
     if(data.data.length===0){
        const div=document.createElement('div') 
-       div.classList="text-2xl w-[100%] my-20 mx-[440px] font-bold justify-centre items-centre"
+       div.classList="text-2xl  w-[80%] md:w-[90%] lg:w-[100%] my-20 mx-[41px] md:mx-[199px]  lg:mx-[440px] font-bold px-auto justify-centre items-centre "
        div.innerHTML = `
             <p class="text-red-500 text-centre pl-2 ">There is no data here!</p>
-            <p class="text-blue-500 tex">Thanks for your interest!</p>
+            <p class="text-blue-500 lg:text-center ">Thanks for your interest!</p>
        `
        card.appendChild(div)
     }
@@ -43,12 +43,12 @@
         console.log(typeof time,typeof hour,typeof minute);
         // console.log(parseInt(time/3600),parseInt((time%3600)/60));
         const div = document.createElement('div')
-    div.classList = "card card-compact bg-base-100 "
+    div.classList = "card card-compact bg-base-100  "
     div.innerHTML =`
     <figure><img class="h-[15rem] object-cover " src="${content.thumbnail}" /></figure>
     
     <div class=" ">
-    <p class=" bg-red-500 rounded w-[50%] text-center  mt-[-1.2rem] mr-0 ml-auto text-xs text-white font-medium "> ${time*1 ? `${hour} hrs ${minute} mnt ago` : ""} </p></div>
+    <p class=" bg-red-500 rounded w-[35%] md:w-[40%] lg:w-[50%] text-center  mt-[-1.2rem] mx-auto lg:mr-0 lg:ml-auto text-xs text-white font-medium "> ${time*1 ? `${hour} hrs ${minute} mnt ago` : ""} </p></div>
     
     <div class="card-body flex flex-row justify-between">
      
