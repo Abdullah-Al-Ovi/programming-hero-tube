@@ -62,7 +62,7 @@
     <figure><img class="h-[15rem] object-cover " src="${content.thumbnail}" /></figure>
     
     <div class=" ">
-    <p class=" bg-red-500 rounded w-[35%] md:w-[40%] lg:w-[50%] text-center  mt-[-1.2rem] mx-auto lg:mr-0 lg:ml-auto text-xs text-white font-medium "> ${time*1 ? `${hour} hrs ${minute} mnt ago` : ""} </p></div>
+    <p class=" bg-red-500 rounded w-[40%] md:w-[45%] lg:w-[50%] text-center  mt-[-1.2rem] mx-auto lg:mr-0 lg:ml-auto text-xs text-white font-medium "> ${time*1 ? `${hour} hrs ${minute} mnt ago` : ""} </p></div>
     
     <div class="card-body flex flex-row justify-between">
      
