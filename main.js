@@ -33,6 +33,7 @@
        const div=document.createElement('div') 
        div.classList="text-2xl  w-[80%] md:w-[90%] lg:w-[100%] my-20 mx-[41px] md:mx-[199px]  lg:mx-[440px] font-bold px-auto justify-centre items-centre "
        div.innerHTML = `
+            <div class='text-center flex justify-center'><img src="./images/Icon.png" /></div><br>
             <p class="text-red-500 text-centre pl-2 ">There is no data here!</p>
             <p class="text-blue-500 lg:text-center ">Thanks for your interest!</p>
        `
