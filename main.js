@@ -1,5 +1,6 @@
  let isDescendingOrder = false;
  let currenCategoryId = 1000;
+
  const handleCategory = async ()=>{
     const res = await fetch("https://openapi.programming-hero.com/api/videos/categories")
     const data = await res.json();
@@ -18,8 +19,6 @@
         categoryList.appendChild(button)
     });
    
-    
-
  }
  const loadData = async(id)=>{
     const card = document.getElementById('cardSection')
@@ -56,7 +55,7 @@
         const hour = parseInt(time/3600)
         const minute = parseInt((time%3600)/60);
        
-        const div = document.createElement('div')
+        const div = document.createElement('div');
     div.classList = "card card-compact bg-base-100  "
     div.innerHTML =`
     <figure><img class="h-[15rem] object-cover " src="${content.thumbnail}" /></figure>
@@ -85,12 +84,11 @@
  }
  handleCategory();
  loadData(currenCategoryId)
+
  function sortCards(){
    isDescendingOrder = !isDescendingOrder;
    loadData(currenCategoryId)
   
- 
-
  }
  
  
